@@ -1,0 +1,20 @@
+int32 RunFlag
+int32 UIcmd
+int32 InputOrientation
+int32 InputPosition
+float64 EntTime
+geometry_msgs/Point PosTarget
+geometry_msgs/Point PosTarget_local
+geometry_msgs/Point PosRCM
+geometry_msgs/Point OriTarget
+float64[] JointAngTarget
+float64 HeadingAngYaw
+float64 HeadingAngPitch
+geometry_msgs/Point PosInit
+geometry_msgs/Point OriInit
+float64[] JointAngInit
+float64 LinearMotionLength
+float64 RotateNum
+float64 RotateTime
+float64 RotateAng
+

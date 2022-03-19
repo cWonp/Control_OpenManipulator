@@ -1,0 +1,11 @@
+<launch>
+  <arg name="run_gazebo"           default="true"/>
+  <arg name="run_realrobot"           default="true"/>
+
+  <node name="controller_arm" pkg="controller_arm" type="controller_arm" 
+    output="screen">
+    <param name="Run_Gazebo" type = "bool" value="$(arg run_gazebo)"/>
+    <param name="Run_RealRobot" type = "bool" value="$(arg run_realrobot)"/>
+  </node>
+</launch>
+

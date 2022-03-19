@@ -1,0 +1,33 @@
+Topic : VisualControl
+
+int32 RunFlag
+	== mode #define POS_CTRL    1	
+		#define ANG_CTRL    2 
+float64 Time
+	== Entire time
+===POS_CTRL
+-----------------------------
+//Unit : mm
+-----------------------------
+float64 PosX
+float64 PosY
+float64 PosZ
+-----------------------------
+//Orientaion = Yaw Pitch Roll
+//Unit : rad
+-----------------------------
+float64 Yaw
+float64 Pitch
+float64 Roll
+
+===ANG_CTRL
+-----------------------------
+//Unit : mm
+-----------------------------
+float64[] JointAng
+-----------------------------
+//Unit : sec
+-----------------------------
+
+
+

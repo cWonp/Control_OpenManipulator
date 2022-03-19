@@ -1,0 +1,19 @@
+ref : https://emanual.robotis.com/docs/en/platform/openmanipulator_x/ros_controller_package/
+
+[operation]
+roscore
+roslaunch open_manipulator_controller open_manipulator_controller.launch
+roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
+roslaunch open_manipulator_description open_manipulator_rviz.launch
+
+[simulation]
+roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
+roslaunch open_manipulator_controller open_manipulator_controller.launch use_platform:=false
+roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
+
+[moveit]
+(operation)
+roslaunch open_manipulator_controllers joint_trajectory_controller.launch sim:=false
+(simulation)
+roslaunch open_manipulator_controllers joint_trajectory_controller.launch
+

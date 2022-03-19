@@ -1,0 +1,12 @@
+float64 PosX
+float64 PosY
+float64 PosZ
+float64 OriX
+float64 OriY
+float64 OriZ
+float64 Ang0
+float64 Ang1
+float64 Ang2
+float64 Ang3
+float64 Ang4
+float64 Ang5

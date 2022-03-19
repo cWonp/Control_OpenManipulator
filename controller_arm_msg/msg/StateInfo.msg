@@ -1,0 +1,13 @@
+bool MotionEndFlag
+int32 UIcmd
+geometry_msgs/Point PosNow
+geometry_msgs/Point OriNow
+float64[] JointAngNow
+geometry_msgs/Point PosInit
+geometry_msgs/Point OriInit
+float64[] JointAngInit
+geometry_msgs/Point PosFrom
+geometry_msgs/Point OriFrom
+geometry_msgs/Point PosTo
+geometry_msgs/Point OriTo
+float64[] JointAngTo
